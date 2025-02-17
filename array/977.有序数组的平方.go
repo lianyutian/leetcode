@@ -5,6 +5,8 @@
  */
 
 // @lc code=start
+package array
+
 func sortedSquares(nums []int) []int {
 	l := len(nums)
 	left := 0
@@ -30,4 +32,3 @@ func sortedSquares(nums []int) []int {
 }
 
 // @lc code=end
-
