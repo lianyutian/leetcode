@@ -5,6 +5,8 @@
  */
 
 // @lc code=start
+package array
+
 func search(nums []int, target int) int {
 	left := 0
 	right := len(nums) - 1
@@ -24,4 +26,3 @@ func search(nums []int, target int) int {
 }
 
 // @lc code=end
-
