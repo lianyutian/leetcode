@@ -5,6 +5,10 @@
  */
 
 // @lc code=start
+package array
+
+import "math"
+
 func minSubArrayLen(target int, nums []int) int {
 	l := len(nums)
 	left := 0
@@ -31,4 +35,3 @@ func minSubArrayLen(target int, nums []int) int {
 }
 
 // @lc code=end
-
