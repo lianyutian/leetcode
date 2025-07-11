@@ -5,18 +5,17 @@
  */
 
 // @lc code=start
-package array
 
 func search(nums []int, target int) int {
+	length := len(nums)
 	left := 0
-	right := len(nums) - 1
+	right := length - 1
 
 	for left <= right {
-		mid := (left + right) / 2
-		midValue := nums[mid]
-		if midValue == target {
+		mid := (right-left)/2 + left
+		if nums[mid] == target {
 			return mid
-		} else if target < midValue {
+		} else if nums[mid] > target {
 			right = mid - 1
 		} else {
 			left = mid + 1
